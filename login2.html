@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion — USTHB</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar__brand">
+      <img src="logo-usthb.png" alt="Logo USTHB" class="navbar__logo">
+      <span class="navbar__title">UNIVERSITY OF SCIENCE AND TECHNOLOGY HOUARI BOUMEDIENE</span>
+    </div>
+    <nav class="navbar__menu">
+      <a href="index.html">Accueil</a>
+    </nav>
+  </header>
+
+  <main class="login-page">
+    <form class="login-form" action="login2.php" method="POST">
+      <h1>Connexion</h1>
+
+      <div id="login-erreur" class="login-form__erreur" hidden>
+        Nom d'utilisateur ou mot de passe incorrect.
+      </div>
+
+      <label for="pseudo">Nom d'utilisateur</label>
+      <input type="text" id="pseudo" name="pseudo" required autofocus>
+
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Se connecter</button>
+    </form>
+  </main>
+
+  <footer class="footer footer--simple">
+    <p>USTHB — Bab Ezzouar, Alger</p>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
